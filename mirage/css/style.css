@@ -14,10 +14,14 @@
   }
 
 body{
-      width: 100%;
-      background: #FCFCFC;
-   }
+  position: relative;    
+  width: 100%;
+  background: #FCFCFC;
+  }
 
+  p, h1, h2, h3, a{
+    font-family: Montserrat;
+ }
    h1, h2{
     font-weight: 500;
  }
@@ -127,7 +131,7 @@ h3{
 }
 
 .main-block__img{
-  display: block;
+  display: flex;
   max-width: 300px;
   object-fit: cover;
   margin: 0 auto;
@@ -135,9 +139,11 @@ h3{
 }
 
 .main-block{
-  display: block;
+  display: flex;
   margin-top: 8px;
 }
+
+
 
   @media (min-width: 576px) {
     .container {
