@@ -2,7 +2,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(../img/menu.png);
+    background-image: url(../assets/img/menu.svg);
     transition: 0.5s;
  }
  
@@ -10,14 +10,43 @@
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url(../img/menu_close.png);
+    background-image: url(../assets/img/menu_close.png);
     transition: 0.5s;
  }
  
  .burger-menu{
     margin-right: 8px;
  }
+
+ .header__burger{
+   margin-right:  8px;
+ }
  
  .menu__item{
     margin: 0px 0px 8px 10px;
  }
+
+ @media (min-width: 576px) {
+   .header__burger{
+      margin-right: 15px;
+   }
+}
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 992px) {
+   .burger__btn{
+      display: none;
+   }
+
+   .burger__btn.close{
+      display: none;
+   }
+
+   .menu__item{
+      margin: 0;
+   } 
+}
+@media (min-width: 1200px) {
+  
+}

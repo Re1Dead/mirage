@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
   <link rel='stylesheet' src=''>
-  <title>Заголовок страницы</title>
+  <title>Mirage</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,20 +19,20 @@
     </noscript>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/subscribe.css">
     <link rel="stylesheet" href="./css/burger.css">
     <link rel="stylesheet" href="./css/lang.css">
+    <link rel="stylesheet" href="./css/footer.css">
     </head>
     
     <body>
         <header>
             <div class="container">
               <div class='header__wrapper'>
-                <div class='header__logo-wrapper'>
-                  <img class='header__logo' alt='site logo' src='./assets/img/logo.svg'>
+                <img class='header__logo' alt='site logo' src='./assets/img/logo.svg'>
                     <div class="header__burger">
                       <span class="burger__btn"></span>
                     </div>  
-                </div>
                 <nav class='navigation'>
                   <ul class='navigation__list'>
                     <li class='navigation__item'>
@@ -47,8 +47,7 @@
                     <li class='navigation__item'>
                         <a class='navigation__link' href=''>Pricing</a>
                     </li>
-                    
-                    </ul>
+                  </ul>
                 </nav>
                 
               </div>
@@ -58,13 +57,11 @@
     <main>
       <!— Основное содержимое страницы —>
       <div class="container">
-        <div class='main-block'>
-          <img class='main-block__img' alt='first image' src='assets/img/Hero Image.svg'>  
-            <div class='main-block__pattern'>
-              <div class='main-block__wrapper'>
-                <h1 class="main-block__title"> 
+        <section class='main-block'>  
+            <span class='pattern'>
+                <h2 class="title"> 
                     __Creative Agency</h1>
-                <h3 class="main-block__description">
+                <h3 class="subtitle">
                     We Deliver The Best
                     Product for You 
                 </h3>
@@ -72,196 +69,209 @@
                         Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints,
                         engineering drawings, business processes, 
                     </p>
-                <button class='cl-button' href=''>
-                    <p>Get started</p>
-                    <img src="img/btnIcon.svg" alt="" class="cl-button__img">
-                </button>
-              </div>
-            </div>
-            
-          </div>          
+                <a class='cl-button' href=''>
+                    <p>Get started </p>
+                    <img src="assets/img/btn_icon.svg" alt="" class="cl-button__img">
+                </a>
+              </span>
+              <img class='block__img' alt='first image' src='assets/img/Hero Image.svg'> 
+        </section>          
         
-          <div class="main-block block__services">
-            <h2 class="main-block__title">Our Services</h2>
-            <h3 class="main-block__description">Why People Choose Us</h3>
-            <div class="card">
-               <div class="card__item_design">
-                  <span class="card-design__img"></span>
-                  <h2 class="card__title">Design</h2>
-                  <p class="card__text">a plan or drawing produced to show the look and function</p>
+          <section class="section__card">
+            <h2 class="title">Our Services</h2>
+            <h3 class="subtitle">Why People Choose Us</h3>
+            
+            <div class="card-wrapper">
+               
+              <div class="card-item js-hovered-card">
+                <img src="assets/img/services/design.svg" alt="card image" class="card-item__img">
+                  <h2 class="card-item__title">Design</h2>
+                  <p class="card-item__text">a plan or drawing produced to show the look and function</p>
                   <span class="card__link">
-                     <a href="#" class="card__item_link">
+                     <a href="#" class="card-item__link">
                         Learn more
-                        <img src="img/triangle.svg" alt="" class="card__link-img">
+                        <img src="" alt="" class="card-item__link-img">
                      </a>
                   </span>
                </div>
 
-               <div class="card__item_develop">
-                  <span class="card-develop__img"></span>
-                  <h2 class="card__title">Development</h2>
-                  <p class="card__text">Development is defined as the process of growth or new</p>
+               <div class="card-item js-hovered-card">
+                <img src="assets/img/services/development.svg" alt="card image" class="card-item__img">
+                  <h2 class="card-item__title">Development</h2>
+                  <p class="card-item__text">Development is defined as the process of growth or new</p>
                   <span class="card__link">
-                     <a href="#" class="card__item_link">
+                     <a href="#" class="card-item__link">
                         Learn more
-                        <img src="img/triangle.svg" alt="" class="card__link-img">
+                        <img src="" alt="" class="card-item__link-img">
                      </a>
                   </span>
                </div>
 
-               <div class="card__item_branding">
-                  <span class="card-branding__img"></span>
-                  <h2 class="card__title">Branding</h2>
-                  <p class="card__text">The marketing practice of creating a name, symbol or</p>
+               <div class="card-item js-hovered-card">
+                <img src="assets/img/services/branding.svg" alt="card image" class="card-item__img">
+                  <h2 class="card-item__title">Branding</h2>
+                  <p class="card-item__text">The marketing practice of creating a name, symbol or</p>
                   <span class="card__link">
-                     <a href="#" class="card__item_link">
+                     <a href="#" class="card-item__link">
                         Learn more
-                        <img src="img/triangle.svg" alt="" class="card__link-img">
+                        <img src="" alt="" class="card-item__link-img">
                      </a>
                   </span>
                </div>
 
-               <div class="card__item_illustration">
-                  <span class="card-illustration__img"></span>
-                  <h2 class="card__title">Illustration</h2>
-                  <p class="card__text">An illustration is a decoration, interpretation or visua</p>
+               <div class="card-item js-hovered-card">
+                <img src="assets/img/services/illustration.svg" alt="card image" class="card-item__img">
+                  <h2 class="card-item__title">Illustration</h2>
+                  <p class="card-item__text">An illustration is a decoration, interpretation or visua</p>
                   <span class="card__link">
-                     <a href="#" class="card__item_link">
+                     <a href="#" class="card-item__link">
                         Learn more
-                        <img src="img/triangle.svg" alt="" class="card__link-img">
+                        <img src="" alt="" class="card-item__link-img">
                      </a>
                   </span>
                </div>
           
             </div>           
-         </div>
+          </section>
 
 
-          <div class='main-block'>
-            <img class='main-block__img' alt='first image' src='assets/img/pluto-artist-workspace.svg'>
-            <div class='main-block__pattern'>
-              <div class='main-block__wrapper'>
-                <h1 class="main-block__title"> 
-                    Design Things</h1>
-                <h2 class="main-block__description">
-                    We Loves To Design 
-                    Your Creative Ideas 
-                </h2>
+          <section class='main-block'>
+            <img class='block__img' alt='second image' src='assets/img/pluto.svg'>
+            <span class='pattern'>
+                <h2 class="title">Design Things</h1>
+                <h3 class="subtitle">
+                  We Loves To Design 
+                  Your Creative Ideas 
+                </h3>
                     <p class="main-block__text">
                         A creative concept is an overarching “Big Idea” that captures audience interest,
                          influences their emotional response and inspires them to take action.
                          It is a unifying theme that can be used across all campaign messages  
                     </p>
                 <button class='cl-button' href=''>
-                  <p>Learn more</p>
-                  <img src="img/btnIcon.svg" alt="" class="cl-button__img">
+                  <p>Learn more </p>
+                  <img src="assets/img/btn_icon.svg" alt="" class="cl-button__img">
                 </button>
-              </div>
-            </div>
-          </div>
+              </span>
+          </section>
 
-          <div class='main-block'>
-            <img class='main-block__img' alt='first image' src='assets/img/Welcome.svg'>
-            <div class='main-block__pattern'>
-              <div class='main-block__wrapper'>
-                <h1 class="main-block__title"> 
+          <section class='main-block'>
+            <span class='pattern'>
+              <h2 class="title"> 
                     Our Teamwork</h1>
-                <h2 class="main-block__description">
+                <h3 class="subtitle">
                     We Believe Success
                     Lies On Teamwork 
-                </h2>
+                </h3>
                     <p class="main-block__text">
                         Good teamwork means a synergistic way of working with each person committed and working towards a shared goal.
                          ... It is therefore a necessity that leaders facilitate and build the teamwork skills of their people if they are 
                     </p>
                 <button class='cl-button' href=''>
-                  <p>Learn more</p>
-                  <img src="img/btnIcon.svg" alt="" class="cl-button__img">
+                  <p>Learn more </p>
+                  <img src="assets/img/btn_icon.svg" alt="" class="cl-button__img">
                 </button>
-              </div>
-            </div>
-            
-          </div>
+              </span>
+              <img class='block__img' alt='third image' src='assets/img/Welcome.svg'> 
+          </section>
 
-          <div class="main-block block__feedback">
-            <img src="assets/img/avatar_img.svg" alt="" class="feedback__img">
+          <section class="main-block block__feedback">
+            <img src="assets/img/avatar_img.svg" alt="feedback image" class="img">
             <span class="feedback__part">
-               <h2 class="main-block__title">Testimonial</h2>
-               <h3 class="main-block__description">Thats What Our Client Says About Us</h3>
-               <p class="feedback__text">“ Heartiest congratulations to the team for Future projects. I extend thankful wishes and wish the team best of luck for the future assignments to come. Your effort is gladly ”</p>
-               <p class="feedback__name">Jorge Morrison</p>
-               <p class="feedback__country">North California,USA</p>
+               <h2 class="title">Testimonial</h2>
+               <h3 class="subtitle">Thats What Our Client Says About Us</h3>
+               <p class="text">“ Heartiest congratulations to the team for Future projects. I extend thankful wishes and wish the team best of luck for the future assignments to come. Your effort is gladly ”</p>
+               <p class="name">Jorge Morrison</p>
+               <p class="country">North California,USA</p>
             </span>
-         </div>
+          </section>
 
-         <div class="main-block block__sponsors">
-          <span class="sponsors__img_ferrari"></span>
-          <span class="sponsors__img_microsoft"></span>
-          <span class="sponsors__img_ng"></span>
-          <span class="sponsors__img_delloite"></span>
-          <span class="sponsors__img_google"></span>
-          
-       </div>
+          <section class="section section--sponsors">
+            <span class="image-wrapper">
+               <img src="assets/img/sponsors/ferrari.svg" alt="sponsor" class="image-wrapper__img">
+               <img src="assets/img/sponsors/ferrari_hover.svg" alt="sponsor" class="image-wrapper__img image-wrapper__img--hovered">
+            </span>
+            
+            <span class="image-wrapper">
+               <img src="assets/img/sponsors/microsoft.svg" alt="sponsor" class="image-wrapper__img">
+               <img src="assets/img/sponsors/microsoft_hover.svg" alt="sponsor" class="image-wrapper__img image-wrapper__img--hovered">
+            </span>
+            
+            <span class="image-wrapper">
+               <img src="assets/img/sponsors/nationalGepgraphic.svg" alt="sponsor" class="image-wrapper__img">
+               <img src="assets/img/sponsors/nationalGepgraphic_hover.svg" alt="sponsor" class="image-wrapper__img image-wrapper__img--hovered">
+            </span>
+            
+            <span class="image-wrapper">
+               <img src="assets/img/sponsors/delloite.svg" alt="sponsor" class="image-wrapper__img">
+               <img src="assets/img/sponsors/delloite_hover.svg" alt="sponsor" class="image-wrapper__img image-wrapper__img--hovered">
+            </span>
+            
+            <span class="image-wrapper">
+               <img src="assets/img/sponsors/google.svg" alt="sponsor" class="image-wrapper__img">
+               <img src="assets/img/sponsors/google_hover.png" alt="sponsor" class="image-wrapper__img image-wrapper__img--hovered">
+            </span>
+      </section>
 
-       <div class="main-block block__subscribe">
-          <img src="assets/img/maily.svg" alt="" class="subscribe__img">
-          <div class="sebscribe__about">
-             <h3 class="main-block__description">Subscribe To Our Blog</h3>
+       <section class="main-block block__subscribe">
+          <img src="assets/img/maily.svg" alt="subscribe image" class="subscribe__img">
+          <div class="subscribe__about">
+             <h3 class="subtitle">Subscribe To Our Blog</h3>
              <p class="main-block__text">A newsletter is a tool used to communicate regularly with
                 your subscribers, delivering the information</p>
-                <span class="subscribe__input">
-                   <input type="email" class="subscribe" placeholder="Type Your Email Address">
-                   <button class="cl-button" type="submit">Send now <img src="img/btnIcon.svg" alt="" class="cl-button__img"></button>
-                </span>
-             
+                <form action="#" class="subscribe-input" method="post">
+                   <input type="email" class="subscribe__field" placeholder="Type Your Email Address">
+                   <button class="cl-button" type="submit">Send now <img src="assets/img/btn_icon.svg" alt="Send" class="cl-button__img"></button>
+                </form>
           </div>
-       </div>
+       </section>
 
         </div>
     </main>
-    <footer class="main-footer">
+    
+    <footer class="footer">
       <!— Footer сайта —>
       <div class="footer__container">
-        <div class="footer__block footer__main">
-           <a href="#" class="footer__logo">
-              <img src="assets/img/logo.svg" alt="" class="footer-logo__img">
+        <div class="footer-block footer-block--about">
+           <a href="#" class="footer-logo">
+              <img src="assets/img/logo.svg" alt="Logo" class="footer-logo__img">
            </a>
-           <p class="footer__text">560 N Riverview D Ste 658</p>
-           <p class="footer__text">North Carolina DA 598745 USA</p>
-           <div class="social__block">
-           <p class="social__title">Follow us on</p>
-           <span class="social__links">
-                 <a href="" class="social__link"><img src="assets/img/social/instagram.svg" alt="" class="social__img"></a>
-                 <a href="" class="social__link"><img src="assets/img/social/twitter.svg" alt="" class="social__img"></a>
-                 <a href="" class="social__link"><img src="assets/img/social/youtube.svg" alt="" class="social__img"></a>
-                 <a href="" class="social__link"><img src="assets/img/social/facebook.svg" alt="" class="social__img"></a>
+           <p class="footer-block__text">560 N Riverview D Ste 658</p>
+           <p class="footer-block__text">North Carolina DA 598745 USA</p>
+           <div class="social-block">
+           <p class="social-block__title">Follow us on</p>
+           <span class="social-block__links">
+                 <a href="" class="social-block__item-link"><img src="assets/img/social/instagram.svg" alt="Instagram" class="social-block__img"></a>
+                 <a href="" class="social-block__item-link"><img src="assets/img/social/twitter.svg" alt="Twitter" class="social-block__img"></a>
+                 <a href="" class="social-block__item-link"><img src="assets/img/social/youtube.svg" alt="YouTube" class="social-block__img"></a>
+                 <a href="" class="social-block__item-link"><img src="assets/img/social/facebook.svg" alt="Facebook" class="social-block__img"></a>
               </span>
            </div>
         </div>
 
-        <div class="footer__block footer__nav">
-           <div class="nav__block">
-              <p class="footer__block_title">Resouces</p>
-              <a href="" class="footer__link">Revisions</a>
-              <a href="" class="footer__link">Sheets</a>
-              <a href="" class="footer__link">Quiz</a>
-              <a href="" class="footer__link">Drill</a>
+        <div class="footer-block footer-block--nav">
+           <div class="footer-menu">
+              <p class="footer-menu__title">Resouces</p>
+              <a href="" class="footer-menu__link">Revisions</a>
+              <a href="" class="footer-menu__link">Sheets</a>
+              <a href="" class="footer-menu__link">Quiz</a>
+              <a href="" class="footer-menu__link">Drill</a>
            </div>
 
-           <div class="nav__block">
-              <p class="footer__block_title">About</p>
-              <a href="" class="footer__link">About us</a>
-              <a href="" class="footer__link">Partners</a>
-              <a href="" class="footer__link">Contact us</a>
-              <a href="" class="footer__link">Careers</a>
+           <div class="footer-menu">
+              <p class="footer-menu__title">About</p>
+              <a href="" class="footer-menu__link">About us</a>
+              <a href="" class="footer-menu__link">Partners</a>
+              <a href="" class="footer-menu__link">Contact us</a>
+              <a href="" class="footer-menu__link">Careers</a>
            </div>
 
-           <div class="nav__block">
-              <p class="footer__block_title">Helpful link</p>
-              <a href="" class="footer__link">Mirage</a>
-              <a href="" class="footer__link">Solutions</a>
-              <a href="" class="footer__link">Industries</a>
-              <a href="" class="footer__link">Services</a>
+           <div class="footer-menu">
+              <p class="footer-menu__title">Helpful link</p>
+              <a href="" class="footer-menu__link">Mirage</a>
+              <a href="" class="footer-menu__link">Solutions</a>
+              <a href="" class="footer-menu__link">Industries</a>
+              <a href="" class="footer-menu__link">Services</a>
            </div>
 
         </div>
@@ -280,5 +290,7 @@
         </div>
      </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="js/main.js"></script>
   </body>
 </html>

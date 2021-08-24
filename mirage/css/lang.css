@@ -19,7 +19,7 @@
 
 .dropbtn
 {
-  background: url('') no-repeat left center;
+  background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
   padding-left: 25px;
   width: 40px;
 }
@@ -41,7 +41,7 @@
 
 .dropdown-content a:last-child
 {
-  background: url('https://icons.iconarchive.com/icons/fatcow/farm-fresh/16/flag-usa-icon.png') no-repeat left center;
+  background: url('https://icons.iconarchive.com/icons/wikipedia/flags/16/UA-Ukraine-Flag-icon.png') no-repeat left center;
 }
 
 /* Links inside the dropdown */
